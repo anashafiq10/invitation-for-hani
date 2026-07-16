@@ -425,3 +425,8 @@ dd {
   display: block;
   object-fit: cover;
 }
+.stage[data-stage="details"] {
+  background:
+    linear-gradient(rgba(255, 248, 240, 0.82), rgba(255, 248, 240, 0.82)),
+    url("assets/food.jpg") center / cover;
+}
