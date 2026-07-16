@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date Invitation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="invite-shell" aria-live="polite">
+      <section class="stage stage-active" data-stage="welcome">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="screen">
+          <p class="eyebrow">A tiny question</p>
+          <h1>Hello <span data-field="herName">beautiful</span>.</h1>
+          <p class="lead">
+            I made this little page for you because asking properly felt better
+            than sending one regular text. Hope you like it.
+          </p>
+          <button class="primary-action" type="button" data-next="reveal">
+            Continue
+          </button>
+        </div>
+      </section>
+
+      <section class="stage" data-stage="reveal">
+        <div class="reveal-card">
+          <p class="eyebrow">The place for our date is</p>
+          <h2 class="drumroll">Drumroll...</h2>
+          <div class="roll-dots" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <button class="primary-action" type="button" data-next="details">
+            Reveal it
+          </button>
+        </div>
+      </section>
+
+      <section class="stage" data-stage="details">
+        <div class="details-layout">
+          <div class="details-intro">
+            <p class="eyebrow">You, me, and</p>
+            <h2 data-field="place">our date spot</h2>
+            <p data-field="message">
+              I want to take you somewhere sweet, spend real time with you, and
+              make the whole evening feel easy.
+            </p>
+          </div>
+
+          <div class="details-panel">
+            <dl class="date-list">
+              <div>
+                <dt>When</dt>
+                <dd data-field="when">Friday night</dd>
+              </div>
+              <div>
+                <dt>Time</dt>
+                <dd data-field="time">7:00 PM</dd>
+              </div>
+              <div>
+                <dt>Plan</dt>
+                <dd data-field="plan">Dinner, a walk, and dessert after</dd>
+              </div>
+              <div>
+                <dt>Dress code</dt>
+                <dd data-field="dressCode">Wear whatever makes you feel cute</dd>
+              </div>
+              <div>
+                <dt>Side note</dt>
+                <dd data-field="sideNote"></dd>
+              </div>
+            </dl>
+            <a class="map-link" data-field="mapLink" href="#" target="_blank" rel="noreferrer">
+              Open the spot
+            </a>
+          </div>
+        </div>
+
+        <div class="answer-row" aria-label="Date response options">
+          <button class="yes-button" type="button" data-answer="yes">Yes</button>
+          <button class="soft-button" type="button" data-answer="also-yes">
+            Also yes
+          </button>
+        </div>
+        <p class="response-note" data-response-note></p>
+      </section>
+
+      <section class="stage" data-stage="accepted">
+        <div class="balloon-field" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="celebration-card">
+          <p class="eyebrow">SUCCESSFUL BOOKING! 🎟️❤️</p>
+          <h2>Thank you for accepting the invitation.</h2>
+          <p>
+            I am officially the happiest person right now. I cannot wait for our
+            date, beautiful sayang.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
