@@ -418,11 +418,10 @@ dd {
   }
 }
 .couple-photo {
-  width: 100%;
-  margin-top: 24px;
+  width: min(100%, 260px);
+  aspect-ratio: 1 / 1;
+  margin: 24px auto 0;
   border-radius: 8px;
   display: block;
   object-fit: cover;
-  max-height: 280px;
 }
-
