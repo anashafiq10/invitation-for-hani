@@ -6,8 +6,8 @@ const invite = {
   plan: "Lunch, a walk, and a movie",
   dressCode: "Wear whatever makes you feel cute (psstt cream beige if possible)",
   sideNote:
-    "Hear me out, sayang hehe.  Yes, a walk, i know you not a big fan, buttttttt trust me, we walk together ( I carry you but a little bit of walking kenala hehe). Btw, You can park your car at open air Central Market, cari yg bawah pokok",
-  message: "If I know what love is, it is because of you",
+    "Hellowwww, sayang. Yes, a walk (sowwyy), i know you not a big fan, buttttttt trust me, we walk together ( I carry you but a little bit of walking kenala hehe). Btw, You can park your car at open air Central Market, cari yg bawah pokok",
+  message: "See you thereee, sayang",
   mapLink: "https://maps.app.goo.gl/6b7P5htrYd5jTDTbA",
 };
 
